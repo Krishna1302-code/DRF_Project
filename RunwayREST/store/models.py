@@ -1,6 +1,8 @@
 from django.db import models # Base ORM tools
 from django.contrib.auth.models import AbstractUser  # Base user model for authentication
-import uuid  # For unique IDs
+import uuid  
+# For unique IDs Universally Unique Identifier 
+# Instead of Django giving  a simple number as an ID, I want a unique, hard-to-guess string (UUID) automatically assigned to each order
 from phonenumber_field.modelfields import PhoneNumberField
 
 
