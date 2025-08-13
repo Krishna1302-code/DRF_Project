@@ -39,7 +39,7 @@ class Product_image(models.Model):
     product = models.ForeignKey(Product,on_delete=models.CASCADE,related_name='images')
     image_url = models.ImageField(upload_to='product/')
 
-class Address(models.Model):
+class Address(models.Model):        
     user = models.ForeignKey(User, on_delete=models.CASCADE,related_name='addresses')
     street = models.CharField(max_length=500)
     city = models.CharField(max_length=100)
